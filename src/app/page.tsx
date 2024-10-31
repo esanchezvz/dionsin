@@ -49,19 +49,19 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="grow bg-[url('/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white">
-        <div className="flex w-screen h-svh md:items-center justify-center gap-8 relative container mx-auto p-4">
+      <main className="grow bg-[url('/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white z-10">
+        <div className="flex w-screen h-full md:items-center justify-center gap-8 relative container mx-auto p-4">
           <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-left">
             <p>MIAMI 2024</p>
             <p className="text-lg md:text-xl">dec</p>
           </div>
 
-          <div className="md:relative fixed bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 md:translate-y-0 md:translate-x-0 md:left-[unset] w-full max-w-[500px]">
+          <div className="md:relative absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 md:translate-y-0 md:translate-x-0 md:left-[unset] w-full max-w-[500px]">
             <Image
               src={dionsin}
               alt="dionsin"
               width={200}
-              className="absolute z-10 w-[200px] left-1/2 -translate-x-1/2 bottom-2/3"
+              className="absolute w-[200px] left-1/2 -translate-x-1/2 bottom-2/3 z-10"
             />
             <Image
               src={moon}

@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -8,9 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        sans: ["var(--font-body)", ...defaultTheme.fontFamily.sans],
+        display: ["var(--font-display)", ...defaultTheme.fontFamily.sans],
       },
     },
   },

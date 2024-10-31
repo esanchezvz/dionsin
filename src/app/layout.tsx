@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${agdasima.variable} ${anton.variable}`}>
-      <body className="antialiased flex flex-col">{children}</body>
+      <body className="antialiased flex flex-col h-svh">{children}</body>
     </html>
   );
 }
