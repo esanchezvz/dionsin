@@ -8,7 +8,7 @@ import moon from "~/assets/the_moon.webp";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col h-svh overflow-hidden">
       <div className="bg-white">
         <div className="flex items-center justify-between container mx-auto p-2">
           <Link href="/">
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="grow bg-[url('/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white z-10">
+      <main className="grow bg-[url('/bg.webp')] bg-cover bg-center bg-no-repeat text-white">
         <div className="flex w-screen h-full md:items-center justify-center gap-8 relative container mx-auto p-4">
           <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-left">
             <p>MIAMI 2024</p>
@@ -61,7 +61,7 @@ export default function Home() {
               src={dionsin}
               alt="dionsin"
               width={200}
-              className="absolute w-[200px] left-1/2 -translate-x-1/2 bottom-2/3 z-10"
+              className="absolute w-[200px] left-1/2 -translate-x-1/2 md:bottom-[50%] z-10 bottom-[70%]"
             />
             <Image
               src={moon}
@@ -77,6 +77,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </>
+    </div>
   );
 }
