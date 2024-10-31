@@ -27,7 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${agdasima.variable} ${anton.variable}`}>
+    <html
+      lang="en"
+      className={`${agdasima.variable} ${anton.variable} bg-black`}
+    >
       <body className="antialiased">{children}</body>
     </html>
   );
