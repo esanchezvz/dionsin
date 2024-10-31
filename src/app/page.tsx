@@ -4,72 +4,77 @@ import Image from "next/image";
 import Link from "next/link";
 
 import dionsin from "~/assets/dionsin.webp";
-import moon from "~/assets/moon.webp";
+import moon from "~/assets/the_moon.webp";
 
 export default function Home() {
   return (
     <>
-      <div className="bg-white flex items-center justify-between absolute left-0 top-0 w-full z-10 p-4">
-        <Link href="/">
-          <img
-            src="/logo.svg"
-            alt="DIONSIN"
-            className="w-[100px] md:w-[130px]"
-          />
-        </Link>
+      <div className="bg-white">
+        <div className="flex items-center justify-between container mx-auto p-2">
+          <Link href="/">
+            <img
+              src="/logo_dionsin.svg"
+              alt="DIONSIN"
+              className="w-[120px] md:w-[150px]"
+            />
+          </Link>
 
-        <ul className="flex items-center gap-4 md:gap-8 text-base md:text-lg">
-          <li>
-            <Link
-              className="disabled uppercase text-gray-400 transition-colors cursor-not-allowed"
-              href="#"
-            >
-              <h6 className="uppercase">Shop</h6>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="disabled uppercase hover:text-red-700 transition-colors"
-              href="https://www.instagram.com/dionsin_art"
-              target="_blank"
-            >
-              <h6 className="uppercase">ig</h6>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="disabled uppercase hover:text-red-700 transition-colors"
-              href="https://wa.me/525586878806"
-            >
-              <h6 className="uppercase">contact</h6>
-            </Link>
-          </li>
-        </ul>
+          <ul className="flex items-center gap-4 md:gap-8 text-lg md:text-xl lg:text-2xl">
+            <li>
+              <Link
+                className="disabled uppercase text-gray-400 transition-colors cursor-not-allowed"
+                href="#"
+              >
+                <h6 className="uppercase">Shop</h6>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="disabled uppercase hover:text-red-700 transition-colors"
+                href="https://www.instagram.com/dionsin_art"
+                target="_blank"
+              >
+                <h6 className="uppercase">ig</h6>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="disabled uppercase hover:text-red-700 transition-colors"
+                href="https://wa.me/525586878806"
+              >
+                <h6 className="uppercase">contact</h6>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <main className="flex flex-col md:flex-row w-screen h-svh items-center justify-center gap-8 relative bg-[url('/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white p-4">
-        <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-center md:text-left">
-          <p>MIAMI 2024</p>
-          <p className="text-lg md:text-xl">dec</p>
-        </div>
 
-        <div className="flex flex-col items-center justify-center">
-          <Image
-            src={dionsin}
-            alt="dionsin"
-            width={200}
-            className="-mb-32 z-10 w-[150px] md:w-[200px]"
-          />
-          <Image
-            src={moon}
-            alt="moon"
-            width={500}
-            className="w-[300px] md:w-[500px]"
-          />
-        </div>
+      <main className="grow bg-[url('/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white">
+        <div className="flex w-screen h-svh md:items-center justify-center gap-8 relative container mx-auto p-4">
+          <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-left">
+            <p>MIAMI 2024</p>
+            <p className="text-lg md:text-xl">dec</p>
+          </div>
 
-        <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-center md:text-left">
-          <p>MEXICO 2025</p>
-          <p className="text-lg md:text-xl">feb</p>
+          <div className="md:relative fixed bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 md:translate-y-0 md:translate-x-0 md:left-[unset] w-full max-w-[500px]">
+            <Image
+              src={dionsin}
+              alt="dionsin"
+              width={200}
+              className="absolute z-10 w-[200px] left-1/2 -translate-x-1/2 bottom-2/3"
+            />
+            <Image
+              src={moon}
+              alt="moon"
+              width={500}
+              className="w-[500px] slow-spin"
+            />
+          </div>
+
+          <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-right">
+            <p>MEXICO 2025</p>
+            <p className="text-lg md:text-xl">feb</p>
+          </div>
         </div>
       </main>
     </>

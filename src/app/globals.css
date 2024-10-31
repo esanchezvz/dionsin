@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.slow-spin {
+  animation: spin 10s linear infinite;
+}
+
 html {
   font-family: var(--font-body);
 }
