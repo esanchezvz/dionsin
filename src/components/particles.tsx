@@ -499,15 +499,7 @@ export const Particles = () => {
   }, []);
 
   if (init) {
-    return (
-      <TsParticles
-        id="tsparticles"
-        particlesLoaded={async (container) => {
-          console.log("particles loaded", container);
-        }}
-        options={options}
-      />
-    );
+    return <TsParticles id="tsparticles" options={options} />;
   }
 
   return null;

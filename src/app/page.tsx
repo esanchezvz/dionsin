@@ -52,7 +52,7 @@ export default function Home() {
 
       <main className="grow text-white">
         <Particles />
-        <div className="flex w-screen h-full md:items-center justify-center gap-8 relative container mx-auto p-4">
+        <div className="flex w-screen h-full md:items-center justify-center gap-8 relative container mx-auto p-4 bg-black">
           <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-left">
             <p>MIAMI 2024</p>
             <p className="text-lg md:text-xl">dec</p>
