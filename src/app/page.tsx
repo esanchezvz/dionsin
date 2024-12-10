@@ -53,11 +53,6 @@ export default function Home() {
       <main className="grow text-white">
         <Particles />
         <div className="flex w-screen h-full md:items-center justify-center gap-8 relative container mx-auto p-4">
-          <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-left">
-            <p>MIAMI 2024</p>
-            <p className="text-lg md:text-xl">dec</p>
-          </div>
-
           <div className="md:relative absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 md:translate-y-0 md:translate-x-0 md:left-[unset] w-full max-w-[500px] z-20">
             <Image
               src={dionsin}
@@ -71,11 +66,6 @@ export default function Home() {
               width={500}
               className="w-[500px] slow-spin"
             />
-          </div>
-
-          <div className="text-[#cdcccc] font-bold text-4xl md:text-6xl uppercase text-right">
-            <p>MEXICO 2025</p>
-            <p className="text-lg md:text-xl">feb</p>
           </div>
         </div>
       </main>
